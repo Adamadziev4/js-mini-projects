@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f3f3f3;;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #eee;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .bugs-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;   
+}
+
+main .bugs-container .info {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+main .list {
+    width: 100%;
+    max-width: 1100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+main .list .item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+main .list .item:last-of-type {
+    border-bottom: none;
+}
+
+main .list .item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.pagenumbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagenumbers button {
+    width: 50px;
+    height: 50px;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    background-color: #44aaee;
+
+    margin: 5px;
+    transition: 0.4s;
+
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagenumbers button:hover {
+    background-color: #3897d6;
+}
+
+.pagenumbers button:active {
+    background-color: #3897d6;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}

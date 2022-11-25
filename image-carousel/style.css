@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    border: 5px solid greenyellow;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    height: 600px;
+    width: 900px;
+}
+
+.img-container {
+    display: flex;
+    transition: transform 0.3 linear;
+    transform: translateX(0);
+}
+
+img {
+    object-fit: fill;
+    height: 600px;
+    width: 900px;
+
+}

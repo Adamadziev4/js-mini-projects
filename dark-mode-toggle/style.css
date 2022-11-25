@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+button.dark {
+    background-color: white;
+}
+
+.btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 20px;
+}  

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    font-size: 3rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+.btn {
+    background-color: rgb(207, 6, 6);
+    color: white;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 75px;
+    font-size: 50px;
+    padding: 75px;
+}
